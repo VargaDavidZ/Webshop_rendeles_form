@@ -19,7 +19,7 @@ export class AppController {
 
 
   @Get("mainPage")
-  @Render("mainPage")
+  @Render("index")
   getMain(){
     
   }
@@ -70,7 +70,7 @@ export class AppController {
     }
 
     if(!/^\d{2}\d{2}$/.test(accoundData.expDate)){
-      err.push('A lejárati dátum nem megfelelő')
+      err.push('A lejárati dátum nem')
     }
 
     if(err.length > 0)
