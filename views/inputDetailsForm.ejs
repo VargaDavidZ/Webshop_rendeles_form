@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <form method="post">
+
+        Name:
+        <input type="text" name="name" required value="<%= data.name%>" ><br>
+
+        Billing Address 
+        <input type="text" name="billingAddress" required value="<%= data.billingAddress%>"><br>
+
+        Delivery Address
+        <input type="text" name="delAddress" required value="<%=data.delAddress %>"><br>
+
+        Cupon code
+        <input type="text" name="cupon" value="<%=data.cupon %>"><br>
+
+        Card Number
+        <input type="text" name="cardNum" required value="<%= data.cardNum %>"><br>
+
+        Expiration Date
+        <input type="text" name="expDate" required value="<%=data.expDate %>" ><br>
+
+        Security Code
+        <input type="text" name="secCode" required value="<%=data.secCode %>"><br>
+
+        <input type="submit">
+
+    </form>
+
+
+   
+    <% for(let item of err) {%>
+        <p style="color: red;" >  <%= item %> </p>
+        <%}%>
+
+
+
+
+
+</body>
+</html>
